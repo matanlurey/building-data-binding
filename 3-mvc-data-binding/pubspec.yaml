@@ -1,0 +1,11 @@
+name: mvc_data_binding
+
+# Enables the new dartdevc compiler during development time.
+#
+# See https://webdev.dartlang.org/tools/dartdevc.
+web:
+  compiler:
+    debug: dartdevc
+
+dev_dependencies:
+  browser:

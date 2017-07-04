@@ -1,0 +1,17 @@
+<ul>
+  <!--
+    Invented syntax. *bind="<TYPE> <TO>".
+
+    In this case, a for-loop bound to "items", with every individual "item".
+  -->
+  <li *bind="for items:item">
+    <!-- Pretty much the gold-standard for string interpolation. -->
+    {{item}}
+    <!--
+      Invented syntax. *event="<NAME>:<TO>".
+
+      In this case, a "click" event that invokes the "onClick" method.
+    -->
+    <button *event="click:onClick(item)">Done</button>
+  </li>
+</ul>
